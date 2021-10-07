@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    
+    margin-top: 50px;
+    max-width: 450px;
+}
+
+.container h1 {
+    box-shadow: 2px 2px #bebdbd;
+    text-align: center;
+    color:  white;
+    background-color: rgba(5, 112, 233, 0.705);
+    font-family: 'Lobster', cursive;
+}
+
+.form-add input {
+    margin-top: 20px;
+    outline: none;
+    box-shadow:none !important;
+    border-radius: 15px;
+    border:1px solid rgb(10, 132, 233) !important;
+}
+
+.form-button {
+    text-align: center;
+    
+}
+.form-button button {
+    border-radius: 10px;
+    margin: 0 8px;
+    background-color:rgba(5, 112, 233, 0.705) !important;
+    border: 0;
+    font-family: 'Staatliches', cursive;
+}
+.form-button button:hover {
+    background-color:rgba(78, 153, 238, 0.705) !important;
+}
+.form-button button:focus {
+    box-shadow: none !important;
+}
+
+.item-list {
+    margin-top: 20px;
+    padding-left: 30%;
+}
+.form-check {
+    margin-top: 20px;
+}
+
+
+.form-check button {
+    background-color: transparent;
+    border: none;
+    color:red;  
+    float: right  !important;
+
+  
+}
+.item-list label {
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+.item-list input:checked+label {
+    text-decoration: line-through;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(78, 73, 73);
+}
