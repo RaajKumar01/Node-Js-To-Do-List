@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://oblivion:qwert1234567890@cluster0.3mfmk.mongodb.net/todolist');
+mongoose.connect('mongodb+srv://oblivion:qwert1234567890@cluster0.3mfmk.mongodb.net/todolist', { useNewUrlParser: true } );
 
 const header = "Today";
 
