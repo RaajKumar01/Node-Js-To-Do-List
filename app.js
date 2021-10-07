@@ -3,16 +3,13 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-let port = process.env.PORT;
-if(port === null || port === "") {
-    port = 3000; 
-}
+const port = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://oblivion:qwert1234567890@cluster0.3mfmk.mongodb.net/todolist', { useNewUrlParser: true } );
+mongoose.connect('mongo db connection url', { useNewUrlParser: true } );
 
 const header = "Today";
 
