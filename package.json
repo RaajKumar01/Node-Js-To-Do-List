@@ -9,7 +9,7 @@
   "author": "Raaj Kumar",
   "license": "ISC",
   "engines": {
-    "node": "14.x"
+    "node": "14.17.5"
   },
   "dependencies": {
     "ejs": "^3.1.6",
