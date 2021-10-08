@@ -35,11 +35,13 @@ app.post('/', (req, res) => {
 
   if(req.body.addButton === "addItem") {
 
+       if(req.body.toDoItem !== "") {
        const Additem = new toDoItems({
          name: req.body.toDoItem
        })
        
        Additem.save();
+     }
   }
   else if(req.body.clearButton === "clearItems")
   {
